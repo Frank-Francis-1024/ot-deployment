@@ -1,0 +1,41 @@
+﻿<Window x:Class="PIC18_RGB_Driver.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PIC18_RGB_Driver"
+        mc:Ignorable="d"
+        Title="PIC18-RGB-Driver" Height="300" Width="462" Icon="/Icon.ico" ResizeMode="NoResize" Background="Black" BorderBrush="Black" WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Grid>
+
+        <Button  BorderBrush="Black" Foreground="White" Content=" ? " HorizontalAlignment="Left" Margin="386,0,0,0" VerticalAlignment="Top" Background="Black" Click="Button_Click_1" Height="20" Width="40" FontFamily="Consolas" FontSize="14"/>
+        <Button  BorderBrush="Black" Foreground="White" Content=" X " HorizontalAlignment="Left" Margin="422,0,0,0" VerticalAlignment="Top" Background="Black" Click="Button_Click" Height="20" Width="40" FontFamily="Consolas" FontSize="14"/>
+        <Label Content="PIC18-RGB-Driver" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Height="29" Width="128"/>
+
+        <Label Content="LED Control Panel:" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Margin="48,71,0,0" Height="29" Width="132"/>
+
+        <Slider PreviewMouseUp="SlideRed_PreviewMouseUp" x:Name="SlideRed" Foreground="White" HorizontalAlignment="Left" Margin="52,128,0,0" VerticalAlignment="Top" Width="120" Maximum="255" SmallChange="0" Height="18" Value="128"/>
+        <Slider PreviewMouseUp="SlideRed_PreviewMouseUp" x:Name="SlideGreen" Foreground="White" HorizontalAlignment="Left" Margin="52,168,0,0" VerticalAlignment="Top" Width="120" Maximum="255" Height="18" Value="128"/>
+        <Slider PreviewMouseUp="SlideRed_PreviewMouseUp" x:Name="SlideBlue" Foreground="White" HorizontalAlignment="Left" Margin="52,208,0,0" VerticalAlignment="Top" Width="120" Maximum="255" Height="18" Value="128"/>
+
+        <Ellipse HorizontalAlignment="Left" Height="20" Margin="178,128,0,0" Stroke="White" VerticalAlignment="Top" Width="20" Fill="red"/>
+        <Ellipse HorizontalAlignment="Left" Height="20" Margin="178,168,0,0" Stroke="White" VerticalAlignment="Top" Width="20" Fill="LimeGreen"/>
+        <Ellipse HorizontalAlignment="Left" Height="20" Margin="178,208,0,0" Stroke="White" VerticalAlignment="Top" Width="20" Fill="Cyan"/>
+        <Label Content="R" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Margin="28,122,0,0" Height="29" Width="19"/>
+        <Label Content="G" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Margin="28,162,0,0" Height="29" Width="20"/>
+        <Label Content="B" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Margin="28,202,0,0" Height="29" Width="19"/>
+
+        <Image HorizontalAlignment="Center" Height="40" VerticalAlignment="Top" Width="40" Source="/circuit.png" Margin="0,157,0,0"/>
+
+        <Label Content="Auto Mode:" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Margin="308,71,0,0" Height="29" Width="89"/>
+
+        <ComboBox x:Name="CBMode" HorizontalAlignment="Left" Margin="308,126,0,0" VerticalAlignment="Top" Width="89" SelectionChanged="CBMode_SelectionChanged">
+            <ComboBox.Items>
+                <ComboBoxItem IsSelected="True">Manual</ComboBoxItem>
+                <ComboBoxItem>Static Color</ComboBoxItem>
+                <ComboBoxItem>Sweep Color</ComboBoxItem>
+            </ComboBox.Items>
+        </ComboBox>
+
+    </Grid>
+</Window>

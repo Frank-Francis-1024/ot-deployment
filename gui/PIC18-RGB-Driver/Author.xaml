@@ -1,0 +1,30 @@
+﻿<Window x:Class="PIC18_RGB_Driver.Author"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PIC18_RGB_Driver"
+        mc:Ignorable="d"
+        Title="Author" Height="280" Width="407" Background="Black" Icon="/Icon.ico" WindowStyle="None" ResizeMode="NoResize" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="257*"/>
+            <ColumnDefinition Width="22*"/>
+            <ColumnDefinition Width="101*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="IPN" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="20" Margin="169,0,0,0"/>
+        <Label Content="ESIME Z" HorizontalAlignment="Left" Margin="157,37,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+        <Label Content="ICE" HorizontalAlignment="Left" Margin="175,68,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
+        <Label Content="Computación" HorizontalAlignment="Left" Margin="144,97,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
+        <Label Content="Arquitectura de Computadoras" HorizontalAlignment="Left" Margin="89,126,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14" Grid.ColumnSpan="3"/>
+        <Label Content="8CM12" HorizontalAlignment="Left" Margin="163,155,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
+        <Label Content="Por: Ing.Morales Orozco José Francisco" HorizontalAlignment="Left" Margin="82,184,0,0" VerticalAlignment="Top" Foreground="White" Grid.ColumnSpan="3"/>
+        <Label Content="Email: jmoraleso1602@gmail.com" HorizontalAlignment="Left" Margin="126,210,0,0" VerticalAlignment="Top" Foreground="White" FontSize="8"/>
+        <Label Content="Proyecto: Microcontrolador USB" HorizontalAlignment="Left" Margin="114,236,0,0" VerticalAlignment="Top" Foreground="White" FontSize="10" Grid.ColumnSpan="2"/>
+        <Image HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="74" Margin="17,27,0,0" Source="/esime.png" Grid.Column="2"/>
+        <Image HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="74" Margin="0,27,0,0" Source="/ipn.png"/>
+        <Button  BorderBrush="Black" Foreground="White" Content=" X " HorizontalAlignment="Left" Margin="68,0,0,0" VerticalAlignment="Top" Background="Black" Click="Button_Click" Height="20" Width="40" FontFamily="Consolas" FontSize="14" Grid.Column="2"/>
+
+
+    </Grid>
+</Window>

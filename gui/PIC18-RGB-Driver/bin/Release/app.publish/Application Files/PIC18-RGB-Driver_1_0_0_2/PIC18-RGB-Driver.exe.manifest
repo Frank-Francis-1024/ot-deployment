@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="PIC18-RGB-Driver.exe" version="1.0.0.2" publicKeyToken="ba6c389045fe8ffe" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="PIC18-RGB-Driver" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="PIC18-RGB-Driver.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opciones del manifiesto de Control de cuentas de usuario
+          Si quiere cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el
+          nodo requestedExecutionLevel por alguno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si desea usar la virtualización de archivos y del Registro para la
+         compatibilidad con versiones anteriores, elimine el nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HidLibrary.dll" size="40960">
+      <assemblyIdentity name="HidLibrary" version="3.2.49.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>EONF13eM2HIGLwLOVuKLD04gt5k1BDbI/dWCPw6OiXo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PIC18-RGB-Driver.exe" size="830928">
+      <assemblyIdentity name="PIC18-RGB-Driver" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>8dXltk/KHg/1td8k62R6dRF90wvG+bjS2sQ4h3AyvoA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Icon.ico" size="64782">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3TPY25bZxE6GEnkWlMriKZYVhlc7UGJX1VEL4ZqwHVs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="PIC18-RGB-Driver.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+CM46OnHRrXZXNLMx7+U3V3iubiYL//d8hGOR13lDhU=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=FRANCISCO-PC\moral" issuerKeyHash="5f1ddf68a15a01727c514513e59b42269e882d93" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>9oHUqKhOE0lttNo+fy1Bjf3rUvFANnsojZqOR/1LMsQ=</DigestValue></Reference></SignedInfo><SignatureValue>bvDxrswdhkwP/3qKGEpLFKaM5civZvyzQXrQZ8wOTQ4AKgVd0IHXj3nmpKMcvzozLQ8JcX9chLkpjxYfjVF3En22j9cf2227vty7JCJH4BVkivi8F3Xve0TKDhpsn8RmHfb5f5q/u5RBw4Csv0a44dhS13IVz08ZGOBbw0mxcSI=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>sLKLf9/qnERF9YXyxfIhfvKY61uYm/mug/0u9fK0F5qpmvlQrZriiv6XAxw5PlDZS+7u5ufk/p9xvc2z6UUMwsT2XGIKyRLNNcfx9kesd6Fk2QrlDL3JiE+nNTOzZwKnnB6JMq4Na2/6JFS+WYmyaESUYFrlLsQzKyG0B5Nv7L0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="c4324bfd478e9a8d287b3640f152ebfd8d412d7f3edab46d49134ea8a8d481f6" Description="" Url=""><as:assemblyIdentity name="PIC18-RGB-Driver.exe" version="1.0.0.2" publicKeyToken="ba6c389045fe8ffe" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=FRANCISCO-PC\moral</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>VqqaA5m3X0k3UsGwatAcc6tX9/Ku5+QUYy76RK4YUrM=</DigestValue></Reference></SignedInfo><SignatureValue>VmQd8Lapb6QmIdBhTpFzurL+1q9HbzqQ3pqUR9DSeQNmNly2h5krdDU3VeZ/mynIhAmsdB3wYaqOV3aT9WrJLWRxP1AWguj6yRo4tteNxe/Sf3hYS0keis2P9tFowOJGeZbedJrJVwCjByVGgHcZuiPTuCSLgI91WvmufJzT/Bk=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sLKLf9/qnERF9YXyxfIhfvKY61uYm/mug/0u9fK0F5qpmvlQrZriiv6XAxw5PlDZS+7u5ufk/p9xvc2z6UUMwsT2XGIKyRLNNcfx9kesd6Fk2QrlDL3JiE+nNTOzZwKnnB6JMq4Na2/6JFS+WYmyaESUYFrlLsQzKyG0B5Nv7L0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB4TCCAUqgAwIBAgIQSMem4hvmlpxJgXtht6IkKTANBgkqhkiG9w0BAQsFADAvMS0wKwYDVQQDHiQARgBSAEEATgBDAEkAUwBDAE8ALQBQAEMAXABtAG8AcgBhAGwwHhcNMjMwNjE3MDY1MTQ0WhcNMjQwNjE2MTI1MTQ0WjAvMS0wKwYDVQQDHiQARgBSAEEATgBDAEkAUwBDAE8ALQBQAEMAXABtAG8AcgBhAGwwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALCyi3/f6pxERfWF8sXyIX7ymOtbmJv5roP9LvXytBeaqZr5UK2a4or+lwMcOT5Q2Uvu7ubn5P6fcb3Ns+lFDMLE9lxiCskSzTXH8fZHrHehZNkK5Qy9yYhPpzUzs2cCp5weiTKuDWtv+iRUvlmJsmhElGBa5S7EMyshtAeTb+y9AgMBAAEwDQYJKoZIhvcNAQELBQADgYEAHDx67Fo69W9xOVkzsk3LZodYIEeUYFfAWhn4Ik172KpxBgRNsDu3NZYvhpoO88IoFEuCHPtdG0sGs2sCcbAacmJGLeAtBLct6E2ALqmArIMxY1MKxVDW8kP5Ov+IiiWLKHDBRHxjKMq6K6F2m3r5LESul77+7LH2UdFzTwyE/Ew=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

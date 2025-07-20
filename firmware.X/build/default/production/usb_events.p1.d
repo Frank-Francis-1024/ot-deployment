@@ -1,0 +1,23 @@
+ build/default/production/usb_events.d  \
+ build/default/production/usb_events.p1:  \
+ usb_events.c  \
+C:/Users/moral/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/language_support.h  \
+C:/Users/moral/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/errata.h  \
+usb_ch9.h  \
+usb_config.h  \
+usb.h  \
+usb_hal_pic18.h  \
+C:/Users/moral/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/pic18.h  \
+usb_common.h  \
+usb_hal.h  \
+usb_device_hid.h  \
+system.h  \
+C:/Users/moral/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/pic18_chip_select.h  \
+io_mapping.h  \
+C:/Users/moral/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/xc.h  \
+C:/Users/moral/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/htc.h  \
+app_device_custom_hid.h  \
+usb_device.h  \
+C:/Users/moral/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/__at.h  \
+C:/Users/moral/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h  \
+C:/Users/moral/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/builtins.h 
